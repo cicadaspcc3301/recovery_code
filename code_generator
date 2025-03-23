@@ -1,0 +1,42 @@
+#can you get this hex off me?
+
+a =  #1_dec
+b =  #2_dec
+c =  #3_dec
+d =  #4_dec
+e =  #5_dec
+
+f = (a * (c ^ 2) * e) 
+g = (a + b) * e
+h = d - (a * b * c)
+
+for i in range (a + b + c + d + e):
+  h += c
+  f += i
+  c *= 1.01
+
+k = (g * int(h)) / g
+j = int(c)
+k = j ^ 3
+l = 8 * k
+m = 1
+n = 0
+
+while m % b != 0:
+  m += 1
+  n += m
+
+o = n * j
+p = o + k
+q = (k - j) * m
+r = q + 7
+s = r + 9
+t = s * 2
+u = a * t
+v = b * p
+w = c * o
+x = d * j
+y = (e * f) 
+z = u + v + w + x + int(y)
+
+print(int(z)) # the recovery code!
