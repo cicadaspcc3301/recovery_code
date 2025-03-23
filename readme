@@ -1,0 +1,11 @@
+a = #recovery code
+b = [6, 5, 3, 18, 23, 13, 8, 13]
+f = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+for i in range (int(a ** (1/4))):
+  for d in range(len(b)):
+    c = int(a ** (1/(d+1))) % 26
+    b[d] = (b[d] + c) % 26
+    
+for i in list (b):
+  print(f[i])
+    
